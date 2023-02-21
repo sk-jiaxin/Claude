@@ -10,15 +10,22 @@ a{text-decoration:none;color:black;cursor:default;}
   <font size="24">Find the correct Entrance,and click </font> <a href="https://sk-jiaxin.github.io/DMBVEF/"><font size="24">iiiit</font></a>
 </body>
 
-<button type="button" class="layui-btn-sm"><i onclick="check()">确定</i></button>
-<body>
-var btn = document.getElementsByClassName('layui-btn-sm')[0];
-var url = 'http://localhost/admin';
-check = function () {
-            if (input.value == 'change') {
-                window.location = url;
-            } else {
-                alert('输入错误')
+<html>
+    <head><title>test</title>
+        <script>
+            function fun() {
+                var password=document.getElementById("password");
+                if (password.value == "123") {
+                       window.open("http://www.baidu.com");
+                        return true;
+                }else {
+                    return false;
+                }
             }
-        };
- </body>
+        </script>
+    </head>
+    <body>
+        <input type="password" name="password" id="passsword"/>
+        <input type="button" value="跳转" onclick=" return fun()"/>
+    </body>
+</html>
